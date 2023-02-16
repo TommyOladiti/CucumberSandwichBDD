@@ -29,7 +29,15 @@ When("the sequence is skipped {int} time(s)", function(value) {
     this.fibonacci.skip(value);
 });
 
+When("next is called {int} time(s)", function(value) {
+    this.fibonacci.next();
+});
+
 Then("the next number should be {int}", function(value) {
+    assert(this.fibonacci.next() == value);
+});
+
+Then("the current number should be {int}", function(value) {
     assert(this.fibonacci.next() == value);
 });
 
