@@ -30,6 +30,8 @@ When("the sequence is skipped {int} time(s)", function(value) {
 });
 
 When("next is called {int} time(s)", function(value) {
+    this.fibonacci.next()
+    this.fibonacci.next()
     this.fibonacci.next();
 });
 

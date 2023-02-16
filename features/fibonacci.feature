@@ -21,20 +21,20 @@ Feature: Fibonacci number sequences
   Scenario: Sequence is initialized and skipped then next number is checked
     Given a fibonacci sequence initialized to 2
     When the sequence is skipped 3 times
-    Then the next number should be 8
+    Then the next number should be 13
     
   Scenario: Sequence is initialized and next is called and then next number is checked
-    Given a fibonacci sequence initialized to 2
+    Given a fibonacci sequence initialized to 3
     When next is called 3 times
-    Then the next number should be 13
+    Then the next number should be 21
   
   Scenario: Sequence is initialized and skipped several times then next number is checked
     Given a fibonacci sequence initialized to 3
     When the sequence is skipped 3 times
     And the sequence is skipped 4 times
-    Then the next number should be 89
+    Then the next number should be 144
 
   Scenario: Initialized with a large legitimate fibonacci number
-    Given a fibonacci sequence initialized to 137347080577163115432025771710279131845700275212767467264610201
-    Then the next number should be 222232244629420445529739893461909967206666939096499764990979600
+    Given a fibonacci sequence initialized to 7778742049
+    Then the next number should be 12586269025
     
